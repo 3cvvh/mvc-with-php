@@ -6,4 +6,10 @@ class Home extends controller{
         $this->view('home/index');
         $this->view('tamplet/footer', $data);
     }
+    public function beranda(){
+        $data['judul'] = 'beranda';
+        $this->view('tamplet/head', $data);
+        $this->view('home/beranda');
+        $this->view('tamplet/footer', $data);
+    }
 }

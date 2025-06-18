@@ -14,6 +14,10 @@
                 </span>
                 tahun.
             </p>
+            <!-- Bulatan galeri gambar -->
+            <div class="flex justify-center mt-6">
+                <img src="http://localhost/tes/road%20to%20laravel/mvc/studykasus/public/img/OC.jpeg" alt="Gallery Besar" class="w-44 h-44 rounded-full border-8 border-blue-400 shadow-2xl bg-white object-cover hover:scale-105 transition-transform">
+            </div>
         </div>
         <h4 class="text-lg font-bold text-purple-600 mb-2">Tentang</h4>
         <p class="text-gray-700 bg-purple-50 rounded p-4 shadow-inner">
