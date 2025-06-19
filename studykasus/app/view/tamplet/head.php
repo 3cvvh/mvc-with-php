@@ -28,6 +28,9 @@
         <a href="http://localhost/tes/road%20to%20laravel/mvc/studykasus/public/about/" class="text-white font-medium hover:bg-white/20 px-4 py-2 rounded-xl transition-all duration-200 flex items-center gap-2">
           <i class="fa-solid fa-envelope"></i> Contact
         </a>
+          <a href="http://localhost/tes/road%20to%20laravel/mvc/studykasus/public/waifu/" class="text-white font-medium hover:bg-white/20 px-4 py-2 rounded-xl transition-all duration-200 flex items-center gap-2">
+          <i class="fa-solid fa-envelope"></i> waifu
+        </a>
       </div>
       <!-- Hamburger -->
       <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">

@@ -1,10 +1,10 @@
 <?php
 class controller{
     public function view($view, $data = []){
-        require '../app/view/' . $view . '.php';
+require_once '../app/views/' . $view . '.php';
     }
     public function model($model){
-        require '../app/model/' . $model . '.php';
+        require '../app/models/' . $model . '.php';
         return new $model;
     }
 }
