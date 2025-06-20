@@ -4,12 +4,16 @@
 // };
 // spl_autoload_register("autoload");
 
+// spl_autoload_register(function($class){
+//     require_once __DIR__ . '/config/' . $class . '.php';
+// });
+// spl_autoload_register(function($class){
+//     require_once __DIR__ .  '/core/' . $class . '.php';
+// });
 spl_autoload_register(function($class){
-    require_once __DIR__ .  '/core/' . $class . '.php';
+    require 'core/' . $class . '.php';
 });
-function panggil($class){
-    $class = explode('\\', $class);
-    $class = end($class);
-require __DIR__ . '/controllers/' . $class . '.php';
-}
-spl_autoload_register('panggil');
+
+
+
+

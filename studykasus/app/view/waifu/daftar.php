@@ -4,11 +4,12 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <?php if(!empty($data['waifu'])): ?>
             <?php foreach ($data['waifu'] as $waifu): ?>
-            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform">
+            <a href="http://localhost/tes/road%20to%20laravel/mvc/studykasus/public/waifu/detail/<?php echo $waifu['id_wife'] ?>"><div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center hover:scale-105 transition-transform">
                 <img src="http://localhost/tes/road%20to%20laravel/mvc/studykasus/public/img/<?php echo htmlspecialchars($waifu['foto']); ?>" alt="<?php echo htmlspecialchars($waifu['nama']); ?>" class="w-28 h-28 rounded-full border-4 border-pink-300 object-cover mb-3">
                 <div class="font-semibold text-purple-700 text-lg"><?php echo htmlspecialchars($waifu['nama']); ?></div>
                     <div class="text-gray-600 text-sm">Umur: <?php echo htmlspecialchars($waifu['umur']); ?></div>
             </div>
+            </a>
             <?php endforeach; ?>
         <?php else: ?>
         </div>

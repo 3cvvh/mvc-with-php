@@ -9,7 +9,3 @@
 spl_autoload_register(function($class){
     require __DIR__ . '/core/' . $class . '.php';
 });
-function reg($class){
-    require __DIR__ . '/controller/' . $class . '.php';
-}
-spl_autoload_register('reg');
