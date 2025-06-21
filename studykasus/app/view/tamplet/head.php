@@ -23,13 +23,13 @@
           <i class="fa-solid fa-user"></i> About
         </a>
         <a href="http://localhost/tes/road%20to%20laravel/mvc/studykasus/public/about/service" class="text-white font-medium hover:bg-white/20 px-4 py-2 rounded-xl transition-all duration-200 flex items-center gap-2">
-          <i class="fa-solid fa-gear"></i> Services
+          <i class="fa-solid fa-envelope"></i> Pesan
         </a>
         <a href="http://localhost/tes/road%20to%20laravel/mvc/studykasus/public/about/" class="text-white font-medium hover:bg-white/20 px-4 py-2 rounded-xl transition-all duration-200 flex items-center gap-2">
           <i class="fa-solid fa-envelope"></i> Contact
         </a>
           <a href="http://localhost/tes/road%20to%20laravel/mvc/studykasus/public/waifu/" class="text-white font-medium hover:bg-white/20 px-4 py-2 rounded-xl transition-all duration-200 flex items-center gap-2">
-          <i class="fa-solid fa-envelope"></i> waifu
+          <i class="fa-regular fa-face-smile"></i> waifu
         </a>
       </div>
       <!-- Hamburger -->

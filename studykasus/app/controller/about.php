@@ -18,10 +18,22 @@ class about extends controller{
         $this->view('tamplet/footer', $data);
     }
     public function Service(){
-        $data['judul'] = 'service page';
+        $data['judul'] = 'pesan';
+        $data['pesan'] = $this->model("about_model")->getpesan();
         $this->view('tamplet/head',$data);
         $this->view('about/Service',$data);
         $this->view('tamplet/footer',$data);
+    }
+    public function tambah(){
+        if($this->model('about_model')->tambah($_POST) > 0){
+            // Set pesan sukses
+            msg::setmsg('Pesan berhasil dikirim', 'tambah', 'success');
+            header('Location: http://localhost/tes/road%20to%20laravel/mvc/studykasus/public/about/');
+        }else{
+            // Set pesan gagal
+            msg::setmsg('Pesan gagal dikirim', 'tambah', 'danger');
+            header('Location: http://localhost/tes/road%20to%20laravel/mvc/studykasus/public/about/');
+        }
     }
 
 }
